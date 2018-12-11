@@ -1,132 +1,86 @@
 package com.hospital.is;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+
 import java.util.Map;
 
-import com.hospital.is.entity.Disease;
-import com.hospital.is.entity.MedicalFolder;
-import com.hospital.is.entity.Patient;
-
+import com.hospital.is.dao.DiseaseDAO;
+import com.hospital.is.dao.Impl.DiseaseDAOImpl;
+import com.hospital.is.model.*;
 
 public class StaticDatabase {
+	
+	public static Map<Integer,Patient> patientMap;
+	public static Map<Integer,Disease> diseaseMap;
+	public static Map<Integer,MedicalFolder> medicalFolderMap;
+	public static Map<Integer,Appointment> AppointementMap;
 
-	public static Map<String, Object> getGenericMap(String key) {
+    static{
+    	
+    	/*initialisation la base des donnees*/
+		///////////////INIT PATIENT///////////////////////
+    	
+    	patientMap=new HashMap<>();
+    	
+		Patient patient = new Patient();
 
-		switch (key) {
-//		case "Patient":
-//			return getPatientList();
-//		case "Disease":
-//			return getPatientList();
-//		case "Appointment":
-//			return getPatientList();
-//		case "MedicalFolder":
-//			return getPatientList();
+		patient.setMedicalFolder(/*getMedicalFolderMap().get(0)*/null);
+		patient.setFirstName("Prénom premier patient");
+		patient.setLastName("Nom premier patient");
+		patient.setAddress("30 rue soulaimane achaairi, 20500, Tetouan Maroc");
+		patient.setBirthDate("01/01/1970");
+		patient.setPhone("+212 6 66 77 88 99");
+		
+		patientMap.put(1,patient);
+		
+		Patient patient1 = new Patient();
 
-		default:
-			break;
-		}
-
-		return null;
-	}
-
-	/**
-	 * @return the diseaseList
-	 */
-	public static Map<Integer, Disease> getDiseaseList() {
-		// List<Disease> diseaseList = new ArrayList<>();
-		Map<Integer, Disease> diseaseList = new HashMap<Integer, Disease>();
-
+		patient1.setMedicalFolder(/*getMedicalFolderMap().get(0)*/null);
+		patient1.setFirstName("mehdi");
+		patient1.setLastName("benjelloun");
+		patient1.setAddress("avenue rabat");
+		patient1.setBirthDate("01/01/1978");
+		patient1.setPhone("+212 9 00 66 87 77");
+		
+		patientMap.put(1,patient1);
+	
+		///////////////////INIT DISEASE/////////////////////
+		
+    	diseaseMap=new HashMap<>();
+		
 		Disease disease = new Disease();
 		disease.setNature("gastro");
 		disease.setDescription("gastro description");
 		disease.setDiagDate("06/12/2018");
+		
+		diseaseMap.put(1,disease);
 
-		diseaseList.put(1, disease);
+		Disease disease1 = new Disease();
+		disease1.setNature("grippe");
+		disease1.setDescription("grippe description");
+		disease1.setDiagDate("06/02/2009");
+        
+		diseaseMap.put(1,disease1);
 
-		return diseaseList;
-	}
+		/////////////////INIT MEDICAL FOLDER////////////////////
 
-	/**
-	 * 
-	 * @return
-	 */
-//	public static Map<Integer, Appointment> getAppointmentList() {
-//		// List<Disease> diseaseList = new ArrayList<>();
-//		Map<Integer, Appointment> appointmentList = new HashMap<Integer, Appointment>();
-//
-//		Appointment appointment = new Appointment();
-//		appointment.setDateTimeAppointment(null);
-//		appointment.setDoctor(new Doctor());
-//		appointment.setPrescriptionList(null);
-//		appointment.setTypeAppointment("Consultation");
-//
-//		appointmentList.put(1, appointment);
-//
-//		return appointmentList;
-//	}
-
-	/**
-	 * @return the medicalFolderList
-	 */
-	public static Map<Integer, MedicalFolder> getMedicalFolderList() {
-		// List<MedicalFolder> medicalFolderList = new ArrayList<>();
-		Map<Integer, MedicalFolder> medicalFolderList = new HashMap<Integer, MedicalFolder>();
+    	medicalFolderMap=new HashMap<>();
+		
 		MedicalFolder medicalFolder = new MedicalFolder();
+		DiseaseDAO diseaseMap=new DiseaseDAOImpl(StaticDatabase.diseaseMap);
+		medicalFolder.setDiseaseMap(diseaseMap.getAll());
+		medicalFolderMap.put(1,medicalFolder);
+		
+		////////////////INIT RENDEZ-VOUS//////////////////////
+		
+		AppointementMap=new HashMap<>();
+        Appointment Appointement =new Appointment();
+		
+		Appointement.setId(1);
+		Appointement.setDate("lundi");
+		Appointement.setSujet("grippe");
+		
+		AppointementMap.put(1,Appointement);
 
-		medicalFolder.setDiseaseList(getDiseaseList());
-
-		medicalFolderList.put(1, medicalFolder);
-
-		return medicalFolderList;
-	}
-
-	/**
-	 * @return the patientList
-	 */
-	public static Map<String, Patient> getPatientList() {
-
-		List<Patient> patientList = new ArrayList<>();
-		Map<String, Patient> map = new HashMap<>();
-
-		Patient patient = new Patient();
-
-		patient.setMedicalFolder(getMedicalFolderList().get(0));
-		patient.setFirstName("Majda");
-		patient.setLastName("AMCHICHI");
-		patient.setAddress("30 rue soulaimane achaairi, 20500, Tetouan Maroc");
-		patient.setBirthDate("01/01/1970");
-		patient.setPhone("+212 6 66 77 88 99");
-
-		patientList.add(patient);
-
-		map.put(patient.getLastName() + patient.getFirstName(), patient);
-
-		return map;
-	}
-
-	/**
-	 * @return the patientList
-	 */
-//	public static Map<String, Doctor> getDoctorList() {
-//
-//		List<Doctor> doctorList = new ArrayList<>();
-//		Map<String, Doctor> map = new HashMap<>();
-//
-//		Doctor doctor = new Doctor();
-//
-//		doctor.setFirstName("Ahmed");
-//		doctor.setLastName("BENANI");
-//		doctor.setAddress("30 rue soulaimane achaairi, 20500, Tetouan Maroc");
-//		doctor.setBirthDate("01/01/1974");
-//		doctor.setPhone("+212 6 66 77 88 77");
-//
-//		doctorList.add(doctor);
-//
-//		map.put(doctor.getLastName() + doctor.getFirstName(), doctor);
-//
-//		return map;
-//	}
-
+	}	
 }
