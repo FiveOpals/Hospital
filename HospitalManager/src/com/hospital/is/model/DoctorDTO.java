@@ -1,9 +1,9 @@
 package com.hospital.is.model;
 
-public class Doctor extends Person {
-	
+public class DoctorDTO extends PersonDTO {
+
 	private Integer registrationNumber;
-	
+
 	private String specialite;
 
 	/**
@@ -14,7 +14,8 @@ public class Doctor extends Person {
 	}
 
 	/**
-	 * @param registrationNumber the registrationNumber to set
+	 * @param registrationNumber
+	 *            the registrationNumber to set
 	 */
 	public void setRegistrationNumber(Integer registrationNumber) {
 		this.registrationNumber = registrationNumber;
@@ -28,11 +29,11 @@ public class Doctor extends Person {
 	}
 
 	/**
-	 * @param specialite the specialite to set
+	 * @param specialite
+	 *            the specialite to set
 	 */
 	public void setSpecialite(String specialite) {
 		this.specialite = specialite;
 	}
 
-	
 }

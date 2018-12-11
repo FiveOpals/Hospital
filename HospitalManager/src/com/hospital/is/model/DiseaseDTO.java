@@ -1,6 +1,6 @@
 package com.hospital.is.model;
 
-public class Disease {
+public class DiseaseDTO {
 
 	private String nature;
 
@@ -18,7 +18,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param nature the nature to set
+	 * @param nature
+	 *            the nature to set
 	 */
 	public void setNature(String nature) {
 		this.nature = nature;
@@ -32,7 +33,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param description the description to set
+	 * @param description
+	 *            the description to set
 	 */
 	public void setDescription(String description) {
 		this.description = description;
@@ -46,7 +48,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param state the state to set
+	 * @param state
+	 *            the state to set
 	 */
 	public void setState(String state) {
 		this.state = state;
@@ -60,7 +63,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param diagDate the diagDate to set
+	 * @param diagDate
+	 *            the diagDate to set
 	 */
 	public void setDiagDate(String diagDate) {
 		this.diagDate = diagDate;

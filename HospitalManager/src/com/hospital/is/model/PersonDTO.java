@@ -1,6 +1,6 @@
 package com.hospital.is.model;
 
-public abstract class Person {
+public abstract class PersonDTO {
 
 	/**
 	 * Le prénom de la personne
@@ -35,7 +35,8 @@ public abstract class Person {
 	}
 
 	/**
-	 * @param firstName the firstName to set
+	 * @param firstName
+	 *            the firstName to set
 	 */
 	public final void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -49,7 +50,8 @@ public abstract class Person {
 	}
 
 	/**
-	 * @param lastName the lastName to set
+	 * @param lastName
+	 *            the lastName to set
 	 */
 	public final void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -63,7 +65,8 @@ public abstract class Person {
 	}
 
 	/**
-	 * @param address the address to set
+	 * @param address
+	 *            the address to set
 	 */
 	public final void setAddress(String address) {
 		this.address = address;
@@ -77,7 +80,8 @@ public abstract class Person {
 	}
 
 	/**
-	 * @param phone the phone to set
+	 * @param phone
+	 *            the phone to set
 	 */
 	public final void setPhone(String phone) {
 		this.phone = phone;
@@ -91,13 +95,16 @@ public abstract class Person {
 	}
 
 	/**
-	 * @param birthDate the birthDate to set
+	 * @param birthDate
+	 *            the birthDate to set
 	 */
 	public final void setBirthDate(String birthDate) {
 		this.birthDate = birthDate;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

@@ -1,8 +1,8 @@
 package com.hospital.is.service;
 
-import com.hospital.is.model.Disease;
+import com.hospital.is.model.DiseaseDTO;
 
-public interface DiseaseService extends Service<Disease> {
+public interface DiseaseService extends Service<DiseaseDTO> {
 
 
 }

@@ -1,13 +1,13 @@
 package com.hospital.is.model;
 
-public class Medication {
+public class MedicationDTO {
 
 	private String medicationName;
 
 	private Integer quantity;
-	
+
 	private String durationOfUse;
-	
+
 	private String instrutionOfUse;
 
 	/**
@@ -18,7 +18,8 @@ public class Medication {
 	}
 
 	/**
-	 * @param medicationName the medicationName to set
+	 * @param medicationName
+	 *            the medicationName to set
 	 */
 	public void setMedicationName(String medicationName) {
 		this.medicationName = medicationName;
@@ -32,7 +33,8 @@ public class Medication {
 	}
 
 	/**
-	 * @param quantity the quantity to set
+	 * @param quantity
+	 *            the quantity to set
 	 */
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
@@ -46,7 +48,8 @@ public class Medication {
 	}
 
 	/**
-	 * @param durationOfUse the durationOfUse to set
+	 * @param durationOfUse
+	 *            the durationOfUse to set
 	 */
 	public void setDurationOfUse(String durationOfUse) {
 		this.durationOfUse = durationOfUse;
@@ -60,11 +63,11 @@ public class Medication {
 	}
 
 	/**
-	 * @param instrutionOfUse the instrutionOfUse to set
+	 * @param instrutionOfUse
+	 *            the instrutionOfUse to set
 	 */
 	public void setInstrutionOfUse(String instrutionOfUse) {
 		this.instrutionOfUse = instrutionOfUse;
 	}
-	
-	
+
 }

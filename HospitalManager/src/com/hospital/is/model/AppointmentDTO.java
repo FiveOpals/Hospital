@@ -8,12 +8,13 @@ public class AppointmentDTO {
 
 	private String typeAppointment;
 
-	private Doctor doctor;
+	private DoctorDTO doctor;
 
 	private PatientDTO patient;
 
-	private Map<Integer, Prescription> prescriptionList;
+	private Map<Integer, PrescriptionDTO> prescriptionMap;
 
+	
 	/**
 	 * @return the dateTimeAppointment
 	 */
@@ -22,7 +23,8 @@ public class AppointmentDTO {
 	}
 
 	/**
-	 * @param dateTimeAppointment the dateTimeAppointment to set
+	 * @param dateTimeAppointment
+	 *            the dateTimeAppointment to set
 	 */
 	public void setDateTimeAppointment(String dateTimeAppointment) {
 		this.dateTimeAppointment = dateTimeAppointment;
@@ -36,11 +38,15 @@ public class AppointmentDTO {
 	}
 
 	/**
-	 * @param typeAppointment the typeAppointment to set
+	 * @param typeAppointment
+	 *            the typeAppointment to set
 	 */
 	public void setTypeAppointment(String typeAppointment) {
 		this.typeAppointment = typeAppointment;
 	}
+
+	
+
 
 	/**
 	 * @return the doctor
@@ -52,36 +58,39 @@ public class AppointmentDTO {
 	/**
 	 * @param doctor the doctor to set
 	 */
-	public void setDoctor(Doctor doctor) {
+	public void setDoctor(DoctorDTO doctor) {
 		this.doctor = doctor;
-	}
-
-	/**
-	 * @return the prescriptionList
-	 */
-	public Map<Integer, Prescription> getPrescriptionList() {
-		return prescriptionList;
-	}
-
-	/**
-	 * @param prescriptionList the prescriptionList to set
-	 */
-	public void setPrescriptionList(Map<Integer, Prescription> prescriptionList) {
-		this.prescriptionList = prescriptionList;
 	}
 
 	/**
 	 * @return the patient
 	 */
-	public PatientDTO getPatient() {
+	public Patient getPatient() {
 		return patient;
 	}
 
 	/**
 	 * @param patient the patient to set
 	 */
-	public void setPatient(PatientDTO patient) {
+	public void setPatient(Patient patient) {
 		this.patient = patient;
 	}
+
+	/**
+	 * @return the prescriptionMap
+	 */
+	public Map<Integer, PrescriptionDTO> getPrescriptionMap() {
+		return prescriptionMap;
+	}
+
+	/**
+	 * @param prescriptionMap
+	 *            the prescriptionMap to set
+	 */
+	public void setPrescriptionMap(Map<Integer, PrescriptionDTO> prescriptionMap) {
+		this.prescriptionMap = prescriptionMap;
+	}
+	
+	
 
 }
