@@ -1,2 +1,2 @@
 # Hospital
-Hospital Management Project in Java Course at Everis.
+Project in Class at Everis for Hospital management.
