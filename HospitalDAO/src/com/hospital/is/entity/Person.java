@@ -1,4 +1,4 @@
-package com.hospital.is.entity;
+package com.hospital.is.model;
 
 public abstract class Person {
 

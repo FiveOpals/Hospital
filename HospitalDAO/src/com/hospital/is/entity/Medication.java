@@ -1,7 +1,9 @@
-package com.hospital.is.entity;
+package com.hospital.is.model;
 
 public class Medication {
 
+	private Integer id;
+	
 	private String medicationName;
 
 	private Integer quantity;
@@ -9,6 +11,22 @@ public class Medication {
 	private String durationOfUse;
 	
 	private String instrutionOfUse;
+
+	
+	
+	/**
+	 * @return the id
+	 */
+	public Integer getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	/**
 	 * @return the medicationName
@@ -65,6 +83,16 @@ public class Medication {
 	public void setInstrutionOfUse(String instrutionOfUse) {
 		this.instrutionOfUse = instrutionOfUse;
 	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Medication [id=" + id + ", medicationName=" + medicationName + ", quantity=" + quantity
+				+ ", durationOfUse=" + durationOfUse + ", instrutionOfUse=" + instrutionOfUse + "]";
+	}
+	
 	
 	
 }

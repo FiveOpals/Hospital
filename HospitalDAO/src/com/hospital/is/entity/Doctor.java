@@ -1,7 +1,7 @@
-package com.hospital.is.entity;
+package com.hospital.is.model;
 
 public class Doctor extends Person {
-	
+		
 	private Integer registrationNumber;
 	
 	private String specialite;
@@ -32,6 +32,14 @@ public class Doctor extends Person {
 	 */
 	public void setSpecialite(String specialite) {
 		this.specialite = specialite;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Doctor [registrationNumber=" + registrationNumber + ", specialite=" + specialite + "]";
 	}
 
 	

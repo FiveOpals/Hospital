@@ -1,87 +1,37 @@
-package com.hospital.is.entity;
-
-import java.util.Map;
+package com.hospital.is.model;
 
 public class Appointment {
-
-	private String dateTimeAppointment;
-
-	private String typeAppointment;
-
-	private Doctor doctor;
-
-	private Patient patient;
-
-	private Map<Integer, Prescription> prescriptionList;
-
-	/**
-	 * @return the dateTimeAppointment
-	 */
-	public String getDateTimeAppointment() {
-		return dateTimeAppointment;
+	
+	private Integer id;
+	private String sujet;
+    private String date;
+    
+	public Integer getId() {
+		return id;
 	}
-
-	/**
-	 * @param dateTimeAppointment the dateTimeAppointment to set
-	 */
-	public void setDateTimeAppointment(String dateTimeAppointment) {
-		this.dateTimeAppointment = dateTimeAppointment;
+	public void setId(Integer id) {
+		this.id = id;
 	}
-
-	/**
-	 * @return the typeAppointment
-	 */
-	public String getTypeAppointment() {
-		return typeAppointment;
+	public String getSujet() {
+		return sujet;
 	}
-
-	/**
-	 * @param typeAppointment the typeAppointment to set
-	 */
-	public void setTypeAppointment(String typeAppointment) {
-		this.typeAppointment = typeAppointment;
+	public void setSujet(String sujet) {
+		this.sujet = sujet;
 	}
-
-	/**
-	 * @return the doctor
-	 */
-	public Doctor getDoctor() {
-		return doctor;
+	public String getDate() {
+		return date;
 	}
-
-	/**
-	 * @param doctor the doctor to set
-	 */
-	public void setDoctor(Doctor doctor) {
-		this.doctor = doctor;
+	public void setDate(String date) {
+		this.date = date;
 	}
-
-	/**
-	 * @return the prescriptionList
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
 	 */
-	public Map<Integer, Prescription> getPrescriptionList() {
-		return prescriptionList;
+	@Override
+	public String toString() {
+		return "Appointment [id=" + id + ", sujet=" + sujet + ", date=" + date + "]";
 	}
-
-	/**
-	 * @param prescriptionList the prescriptionList to set
-	 */
-	public void setPrescriptionList(Map<Integer, Prescription> prescriptionList) {
-		this.prescriptionList = prescriptionList;
-	}
-
-	/**
-	 * @return the patient
-	 */
-	public Patient getPatient() {
-		return patient;
-	}
-
-	/**
-	 * @param patient the patient to set
-	 */
-	public void setPatient(Patient patient) {
-		this.patient = patient;
-	}
+    
+    
 
 }

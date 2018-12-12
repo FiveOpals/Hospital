@@ -1,7 +1,8 @@
-package com.hospital.is.entity;
+package com.hospital.is.model;
 
 public class Disease {
-
+	private Integer id;
+	
 	private String nature;
 
 	private String description;
@@ -9,6 +10,20 @@ public class Disease {
 	private String state;
 
 	private String diagDate;
+
+	/**
+	 * @return the id
+	 */
+	public Integer getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	/**
 	 * @return the nature
@@ -66,15 +81,15 @@ public class Disease {
 		this.diagDate = diagDate;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Disease [nature=" + nature + ", description=" + description + ", state=" + state + ", diagDate="
-				+ diagDate + "]";
+		return "Disease [id=" + id + ", nature=" + nature + ", description=" + description + ", state=" + state
+				+ ", diagDate=" + diagDate + "]";
 	}
+
+	
 
 }
