@@ -36,4 +36,9 @@ public class DoctorDTO extends PersonDTO {
 		this.specialite = specialite;
 	}
 
+	@Override
+	public String toString() {
+		return "DoctorDTO [registrationNumber=" + registrationNumber + ", specialite=" + specialite + "]";
+	}
+
 }
