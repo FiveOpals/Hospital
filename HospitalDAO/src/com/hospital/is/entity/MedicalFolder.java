@@ -1,34 +1,15 @@
-package com.hospital.is.model;
+package com.hospital.is.entity;
+
 
 import java.util.Map;
 
 public class MedicalFolder {
-	private Integer id;
-	private Map<Integer,Disease> diseaseMap;
-	private Map<Integer,Appointment> appointment;
 
+	private Map<Integer, Disease> diseaseMap;
 	
+	private Map<Integer, Prescription> prescriptionMap;
 	
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
-	}
-
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	/**
-	 * @return the appointment
-	 */
-	public Map<Integer, Appointment> getAppointment() {
-		return appointment;
-	}
+	private Map<Integer, Appointment> appointmentMap;
 
 	public Map<Integer, Disease> getDiseaseMap() {
 		return diseaseMap;
@@ -38,15 +19,26 @@ public class MedicalFolder {
 		this.diseaseMap = diseaseMap;
 	}
 
-	public void setAppointment(Map<Integer, Appointment> appointment) {
-		this.appointment = appointment;
+	public Map<Integer, Prescription> getPrescriptionMap() {
+		return prescriptionMap;
 	}
-	
-	
+
+	public void setPrescriptionMap(Map<Integer, Prescription> prescriptionMap) {
+		this.prescriptionMap = prescriptionMap;
+	}
+
+	public Map<Integer, Appointment> getAppointmentMap() {
+		return appointmentMap;
+	}
+
+	public void setAppointmentMap(Map<Integer, Appointment> appointmentMap) {
+		this.appointmentMap = appointmentMap;
+	}
 
 	@Override
 	public String toString() {
-		return "MedicalFolder [diseaseMap=" + diseaseMap + ", appointment=" + appointment + "]";
+		return "MedicalFolder [diseaseMap=" + diseaseMap + ", prescriptionMap=" + prescriptionMap + ", appointmentMap="
+				+ appointmentMap + "]";
 	}
-	
+		
 }

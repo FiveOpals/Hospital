@@ -1,4 +1,4 @@
-package com.hospital.is.model;
+package com.hospital.is.entity;
 
 import java.util.Map;
 
@@ -62,7 +62,5 @@ public class Prescription {
 		return "Prescription [id=" + id + ", medicationlist=" + medicationlist + ", descriptionOfUse="
 				+ descriptionOfUse + "]";
 	}
-	
-	
 	
 }

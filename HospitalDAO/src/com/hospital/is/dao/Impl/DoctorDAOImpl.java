@@ -3,11 +3,10 @@
  */
 package com.hospital.is.dao.Impl;
 
-import com.hospital.is.model.Doctor;
-
 import java.util.Map;
 
 import com.hospital.is.dao.DoctorDAO;
+import com.hospital.is.entity.Doctor;
 
 /**
  * @author user001

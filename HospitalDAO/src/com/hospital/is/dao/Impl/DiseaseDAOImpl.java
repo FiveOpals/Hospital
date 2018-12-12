@@ -3,7 +3,7 @@ package com.hospital.is.dao.Impl;
 import java.util.Map;
 
 import com.hospital.is.dao.DiseaseDAO;
-import com.hospital.is.model.Disease;;
+import com.hospital.is.entity.Disease;;
 
 /**
  * @author user001

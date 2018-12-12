@@ -1,4 +1,4 @@
-package com.hospital.is.transformers;
+package com.hospital.is.converters;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,15 +13,19 @@ public class AppointmentConverter {
 	 * @param appointment
 	 * @return appointmentDTO
 	 */
-	static AppointmentDTO entityToDTO(Appointment appointment) {
+	static AppointmentDTO entityToDTO(Appointment appointment)
+	{		
 		AppointmentDTO appointmentDTO = new AppointmentDTO();
+		
 		appointmentDTO.setDateTimeAppointment(appointment.getDateTimeAppointment());
-		appointmentDTO.setDoctor(appointment.getDoctor());
-		appointmentDTO.setPatient(appointment.getPatient());
+		appointmentDTO.setDoctor(DoctorConverter.entityToDTO(appointment.getDoctor()));
+		appointmentDTO.setPatient(PatientConverter.entityToDTO(appointment.getPatient()));
+		appointmentDTO.setPrescriptionMap(PrescriptionConverter.mapEntityToDTO(appointment.getPrescriptionMap()));
 		appointmentDTO.setTypeAppointment(appointment.getTypeAppointment());
-		return appointmentDTO;
 
+		return appointmentDTO;
 	}
+
 	/**
 	 * 
 	 * @param appointmentDTO
@@ -30,10 +34,13 @@ public class AppointmentConverter {
 	static Appointment DTOToEntity(AppointmentDTO appointmentDTO) {
 
 		Appointment appointment = new Appointment();
+		
+		appointment.setDoctor(DoctorConverter.DTOToEntity(appointmentDTO.getDoctor()));
+		appointment.setPatient(PatientConverter.DTOToEntity(appointmentDTO.getPatient()));
+		appointment.setPrescriptionMap(PrescriptionConverter.mapDTOToEntity(appointmentDTO.getPrescriptionMap()));
 		appointment.setDateTimeAppointment(appointmentDTO.getDateTimeAppointment());
-		appointment.setDoctor(appointmentDTO.getDoctor());
-		appointment.setPatient(appointmentDTO.getPatient());
 		appointment.setTypeAppointment(appointmentDTO.getTypeAppointment());
+		
 		return appointment;
 
 	}
@@ -71,5 +78,6 @@ public class AppointmentConverter {
 
 		return MapAppointment;
 	}
+
 
 }

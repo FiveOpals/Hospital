@@ -70,4 +70,10 @@ public class MedicationDTO {
 		this.instrutionOfUse = instrutionOfUse;
 	}
 
+	@Override
+	public String toString() {
+		return "MedicationDTO [medicationName=" + medicationName + ", quantity=" + quantity + ", durationOfUse="
+				+ durationOfUse + ", instrutionOfUse=" + instrutionOfUse + "]";
+	}
+
 }

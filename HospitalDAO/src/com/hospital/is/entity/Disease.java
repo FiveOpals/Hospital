@@ -1,4 +1,4 @@
-package com.hospital.is.model;
+package com.hospital.is.entity;
 
 public class Disease {
 	private Integer id;

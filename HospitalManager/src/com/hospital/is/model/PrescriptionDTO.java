@@ -38,4 +38,9 @@ public class PrescriptionDTO {
 		this.descriptionOfUse = descriptionOfUse;
 	}
 
+	@Override
+	public String toString() {
+		return "PrescriptionDTO [medicationMap=" + medicationMap + ", descriptionOfUse=" + descriptionOfUse + "]";
+	}
+	
 }

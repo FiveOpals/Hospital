@@ -3,10 +3,10 @@ package com.hospital.is.converters;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.hospital.is.model.Patient;
+import com.hospital.is.entity.Patient;
 import com.hospital.is.model.PatientDTO;
 
-public class PatientConverter extends PersonConverter {
+public class PatientConverter {
 
 	/**
 	 * 

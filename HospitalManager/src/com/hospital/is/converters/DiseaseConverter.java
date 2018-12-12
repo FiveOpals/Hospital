@@ -3,7 +3,7 @@ package com.hospital.is.converters;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.hospital.is.model.Disease;
+import com.hospital.is.entity.Disease;
 import com.hospital.is.model.DiseaseDTO;
 
 public class DiseaseConverter {

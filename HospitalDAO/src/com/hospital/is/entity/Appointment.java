@@ -1,37 +1,94 @@
-package com.hospital.is.model;
+package com.hospital.is.entity;
+
+import java.util.Map;
 
 public class Appointment {
-	
-	private Integer id;
-	private String sujet;
-    private String date;
-    
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getSujet() {
-		return sujet;
-	}
-	public void setSujet(String sujet) {
-		this.sujet = sujet;
-	}
-	public String getDate() {
-		return date;
-	}
-	public void setDate(String date) {
-		this.date = date;
-	}
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
+
+	private String dateTimeAppointment;
+
+	private String typeAppointment;
+
+	private Doctor doctor;
+
+	private Patient patient;
+
+	private Map<Integer, Prescription> prescriptionMap;
+
+	/**
+	 * @return the dateTimeAppointment
 	 */
+	public String getDateTimeAppointment() {
+		return dateTimeAppointment;
+	}
+
+	/**
+	 * @param dateTimeAppointment the dateTimeAppointment to set
+	 */
+	public void setDateTimeAppointment(String dateTimeAppointment) {
+		this.dateTimeAppointment = dateTimeAppointment;
+	}
+
+	/**
+	 * @return the typeAppointment
+	 */
+	public String getTypeAppointment() {
+		return typeAppointment;
+	}
+
+	/**
+	 * @param typeAppointment the typeAppointment to set
+	 */
+	public void setTypeAppointment(String typeAppointment) {
+		this.typeAppointment = typeAppointment;
+	}
+
+	/**
+	 * @return the doctor
+	 */
+	public Doctor getDoctor() {
+		return doctor;
+	}
+
+	/**
+	 * @param doctor the doctor to set
+	 */
+	public void setDoctor(Doctor doctor) {
+		this.doctor = doctor;
+	}
+
+	/**
+	 * @return the prescriptionList
+	 */
+	public Map<Integer, Prescription> getPrescriptionMap() {
+		return prescriptionMap;
+	}
+
+	/**
+	 * @param prescriptionList the prescriptionList to set
+	 */
+	public void setPrescriptionMap(Map<Integer, Prescription> prescriptionMap) {
+		this.prescriptionMap = prescriptionMap;
+	}
+
+	/**
+	 * @return the patient
+	 */
+	public Patient getPatient() {
+		return patient;
+	}
+
+	/**
+	 * @param patient the patient to set
+	 */
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
+
 	@Override
 	public String toString() {
-		return "Appointment [id=" + id + ", sujet=" + sujet + ", date=" + date + "]";
+		return "Appointment [dateTimeAppointment=" + dateTimeAppointment + ", typeAppointment=" + typeAppointment
+				+ ", doctor=" + doctor + ", patient=" + patient + ", prescriptionMap=" + prescriptionMap + "]";
 	}
-    
-    
-
+	
+	
 }

@@ -19,14 +19,9 @@ public class PatientDTO extends PersonDTO implements Comparable<PatientDTO> {
 		this.medicalFolder = medicalFolder;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
-		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "]";
+		return "PatientDTO [medicalFolder=" + medicalFolder + "]";
 	}
 
 	@Override

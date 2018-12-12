@@ -1,12 +1,14 @@
 package com.hospital.is;
 
-
+import com.hospital.is.dao.AppointmentDAO;
+import com.hospital.is.dao.Impl.AppointmentDAOImpl;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(StaticDatabase.AppointementMap.get(1));
+		AppointmentDAO adao = new AppointmentDAOImpl(StaticDatabase.AppointementMap);
+		System.out.println(adao.getAll());
 
 		
 	}

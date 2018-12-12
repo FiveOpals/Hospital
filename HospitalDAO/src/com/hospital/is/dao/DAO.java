@@ -4,20 +4,16 @@ import java.util.Map;
 
 public interface DAO<T> {
 
-	//Create
-	
-	T create(long id,T t);
-	
-	//Read
+	// Create
+	T create(long id, T t);
 
-	Map<Integer ,T> getAll();
+	// Read
+	Map<Integer, T> getAll();
 	
+	// Read by id
 	T getById(long id);
 
 	// Update
-	T update(long id,T t);
+	T update(long id, T t);
 
-
-	//Delete
-	//	boolean delete(long id);
 }

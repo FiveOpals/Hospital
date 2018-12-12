@@ -6,7 +6,7 @@ package com.hospital.is.dao.Impl;
 import java.util.Map;
 
 import com.hospital.is.dao.AppointmentDAO;
-import com.hospital.is.model.Appointment;
+import com.hospital.is.entity.Appointment;
 
 /**
  * @author user001

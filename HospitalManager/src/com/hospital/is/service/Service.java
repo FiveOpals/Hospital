@@ -9,9 +9,7 @@ public interface Service<T> {
 	Map<Integer ,T> getAll();
 
 	T getById(long id);
-
-
+	
 	T update(T t, long id);
 
-	//	boolean delete(long id);
 }

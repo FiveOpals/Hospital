@@ -1,4 +1,4 @@
-package com.hospital.is.model;
+package com.hospital.is.entity;
 
 public class Patient extends Person {
 
@@ -32,10 +32,6 @@ public class Patient extends Person {
 	public void setMedicalFolder(MedicalFolder medicalFolder) {
 		this.medicalFolder = medicalFolder;
 	}
-
-	
-	
-	
 
 	/*
 	 * (non-Javadoc)
