@@ -4,11 +4,28 @@ import java.util.Map;
 
 public class MedicalFolderDTO {
 
+	private long idMedicalFolder;
+
 	private Map<Integer, DiseaseDTO> diseaseMap;
 
 	private Map<Integer, PrescriptionDTO> prescriptionMap;
 
 	private Map<Integer, AppointmentDTO> appointmentMap;
+
+	/**
+	 * @return the idMedicalFolder
+	 */
+	public long getIdMedicalFolder() {
+		return idMedicalFolder;
+	}
+
+	/**
+	 * @param idMedicalFolder
+	 *            the idMedicalFolder to set
+	 */
+	public void setIdMedicalFolder(long idMedicalFolder) {
+		this.idMedicalFolder = idMedicalFolder;
+	}
 
 	/**
 	 * @return the diseaseMap
@@ -55,10 +72,14 @@ public class MedicalFolderDTO {
 		this.appointmentMap = appointmentMap;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
-		return "MedicalFolderDTO [diseaseMap=" + diseaseMap + ", prescriptionMap=" + prescriptionMap
-				+ ", appointmentMap=" + appointmentMap + "]";
+		return "MedicalFolder [diseaseMap=" + diseaseMap + "]";
 	}
 
 }

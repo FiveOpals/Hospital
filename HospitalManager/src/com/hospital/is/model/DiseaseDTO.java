@@ -2,6 +2,8 @@ package com.hospital.is.model;
 
 public class DiseaseDTO {
 
+	private long idDisease;
+
 	private String nature;
 
 	private String description;
@@ -9,6 +11,21 @@ public class DiseaseDTO {
 	private String state;
 
 	private String diagDate;
+
+	/**
+	 * @return the idDisease
+	 */
+	public long getIdDisease() {
+		return idDisease;
+	}
+
+	/**
+	 * @param idDisease
+	 *            the idDisease to set
+	 */
+	public void setIdDisease(long idDisease) {
+		this.idDisease = idDisease;
+	}
 
 	/**
 	 * @return the nature

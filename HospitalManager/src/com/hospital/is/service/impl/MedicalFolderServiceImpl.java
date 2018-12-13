@@ -1,5 +1,6 @@
 package com.hospital.is.service.impl;
 
+import com.hospital.is.entity.MedicalFolder;
 import com.hospital.is.model.MedicalFolderDTO;
 import com.hospital.is.service.MedicalFolderService;
 
@@ -7,6 +8,7 @@ import com.hospital.is.service.MedicalFolderService;
  * @author user001
  *
  */
-public class MedicalFolderServiceImpl extends ServiceImpl<MedicalFolderDTO> implements MedicalFolderService {
+public class MedicalFolderServiceImpl extends ServiceImpl<MedicalFolderDTO, MedicalFolder>
+		implements MedicalFolderService {
 
 }

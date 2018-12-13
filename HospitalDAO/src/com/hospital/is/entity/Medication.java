@@ -84,10 +84,15 @@ public class Medication {
 		this.instrutionOfUse = instrutionOfUse;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Medication [id=" + id + ", medicationName=" + medicationName + ", quantity=" + quantity
 				+ ", durationOfUse=" + durationOfUse + ", instrutionOfUse=" + instrutionOfUse + "]";
 	}
+	
+	
 	
 }

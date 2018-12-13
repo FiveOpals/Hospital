@@ -1,8 +1,24 @@
 package com.hospital.is.model;
 
-public class PatientDTO extends PersonDTO implements Comparable<PatientDTO> {
+public class PatientDTO extends PersonDTO  {
 
+	private long idMedicalFolder;
+	
 	private MedicalFolderDTO medicalFolder;
+
+	/**
+	 * @return the idMedicalFolder
+	 */
+	public long getIdMedicalFolder() {
+		return idMedicalFolder;
+	}
+
+	/**
+	 * @param idMedicalFolder the idMedicalFolder to set
+	 */
+	public void setIdMedicalFolder(long idMedicalFolder) {
+		this.idMedicalFolder = idMedicalFolder;
+	}
 
 	/**
 	 * @return the medicalFolder
@@ -19,20 +35,17 @@ public class PatientDTO extends PersonDTO implements Comparable<PatientDTO> {
 		this.medicalFolder = medicalFolder;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
-		return "PatientDTO [medicalFolder=" + medicalFolder + "]";
+		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "]";
 	}
 
-	@Override
-	public int compareTo(PatientDTO o) {
-		// if (this.getFirstName().subSequence(0,
-		// 1).equals(o.getFirstName().substring(0, 1))) {
-		// return 0;
-		// } else {
-		// return -1;
-		// }
-		return 0;
-	}
+	
+	
 
 }

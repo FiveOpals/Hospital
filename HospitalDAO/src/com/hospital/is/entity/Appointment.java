@@ -10,7 +10,6 @@ public class Appointment {
 
 	private Doctor doctor;
 
-	private Patient patient;
 
 	private Map<Integer, Prescription> prescriptionMap;
 
@@ -70,24 +69,11 @@ public class Appointment {
 		this.prescriptionMap = prescriptionMap;
 	}
 
-	/**
-	 * @return the patient
-	 */
-	public Patient getPatient() {
-		return patient;
-	}
-
-	/**
-	 * @param patient the patient to set
-	 */
-	public void setPatient(Patient patient) {
-		this.patient = patient;
-	}
-
+	
 	@Override
 	public String toString() {
 		return "Appointment [dateTimeAppointment=" + dateTimeAppointment + ", typeAppointment=" + typeAppointment
-				+ ", doctor=" + doctor + ", patient=" + patient + ", prescriptionMap=" + prescriptionMap + "]";
+				+ ", doctor=" + doctor + ", prescriptionMap=" + prescriptionMap + "]";
 	}
 	
 	

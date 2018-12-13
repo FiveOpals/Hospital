@@ -3,6 +3,11 @@ package com.hospital.is.model;
 public abstract class PersonDTO {
 
 	/**
+	 * Id de la personne
+	 */
+	private long idPerson;
+
+	/**
 	 * Le prénom de la personne
 	 */
 	private String firstName;
@@ -26,6 +31,21 @@ public abstract class PersonDTO {
 	 * La date de naissance de la personne
 	 */
 	private String birthDate;
+
+	/**
+	 * @return the idPerson
+	 */
+	public long getIdPerson() {
+		return idPerson;
+	}
+
+	/**
+	 * @param idPerson
+	 *            the idPerson to set
+	 */
+	public void setIdPerson(long idPerson) {
+		this.idPerson = idPerson;
+	}
 
 	/**
 	 * @return the firstName

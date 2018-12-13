@@ -2,6 +2,8 @@ package com.hospital.is.model;
 
 public class MedicationDTO {
 
+	private long idMedication;
+
 	private String medicationName;
 
 	private Integer quantity;
@@ -9,6 +11,21 @@ public class MedicationDTO {
 	private String durationOfUse;
 
 	private String instrutionOfUse;
+
+	/**
+	 * @return the idMedication
+	 */
+	public long getIdMedication() {
+		return idMedication;
+	}
+
+	/**
+	 * @param idMedication
+	 *            the idMedication to set
+	 */
+	public void setIdMedication(long idMedication) {
+		this.idMedication = idMedication;
+	}
 
 	/**
 	 * @return the medicationName
@@ -68,12 +85,6 @@ public class MedicationDTO {
 	 */
 	public void setInstrutionOfUse(String instrutionOfUse) {
 		this.instrutionOfUse = instrutionOfUse;
-	}
-
-	@Override
-	public String toString() {
-		return "MedicationDTO [medicationName=" + medicationName + ", quantity=" + quantity + ", durationOfUse="
-				+ durationOfUse + ", instrutionOfUse=" + instrutionOfUse + "]";
 	}
 
 }

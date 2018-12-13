@@ -1,7 +1,8 @@
 package com.hospital.is.service;
 
+import com.hospital.is.entity.Patient;
 import com.hospital.is.model.PatientDTO;
 
-public interface PatientService extends Service<PatientDTO> {
+public interface PatientService extends Service<PatientDTO, Patient> {
 
 }

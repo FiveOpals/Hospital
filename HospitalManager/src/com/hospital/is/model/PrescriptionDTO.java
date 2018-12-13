@@ -4,6 +4,8 @@ import java.util.Map;
 
 public class PrescriptionDTO {
 
+	private long idPrescription;
+	
 	private Map<Integer, MedicationDTO> medicationMap;
 
 	private String descriptionOfUse;
@@ -13,6 +15,20 @@ public class PrescriptionDTO {
 	 */
 	public Map<Integer, MedicationDTO> getMedicationMap() {
 		return medicationMap;
+	}
+
+	/**
+	 * @return the idPrescription
+	 */
+	public long getIdPrescription() {
+		return idPrescription;
+	}
+
+	/**
+	 * @param idPrescription the idPrescription to set
+	 */
+	public void setIdPrescription(long idPrescription) {
+		this.idPrescription = idPrescription;
 	}
 
 	/**
@@ -38,9 +54,4 @@ public class PrescriptionDTO {
 		this.descriptionOfUse = descriptionOfUse;
 	}
 
-	@Override
-	public String toString() {
-		return "PrescriptionDTO [medicationMap=" + medicationMap + ", descriptionOfUse=" + descriptionOfUse + "]";
-	}
-	
 }

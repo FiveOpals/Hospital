@@ -33,6 +33,10 @@ public class Patient extends Person {
 		this.medicalFolder = medicalFolder;
 	}
 
+	
+	
+	
+
 	/*
 	 * (non-Javadoc)
 	 * 

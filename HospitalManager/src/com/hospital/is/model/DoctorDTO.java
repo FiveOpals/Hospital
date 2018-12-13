@@ -2,9 +2,26 @@ package com.hospital.is.model;
 
 public class DoctorDTO extends PersonDTO {
 
+	private long idDoctor;
+
 	private Integer registrationNumber;
 
 	private String specialite;
+
+	/**
+	 * @return the idDoctor
+	 */
+	public long getIdDoctor() {
+		return idDoctor;
+	}
+
+	/**
+	 * @param idDoctor
+	 *            the idDoctor to set
+	 */
+	public void setIdDoctor(long idDoctor) {
+		this.idDoctor = idDoctor;
+	}
 
 	/**
 	 * @return the registrationNumber
@@ -34,11 +51,6 @@ public class DoctorDTO extends PersonDTO {
 	 */
 	public void setSpecialite(String specialite) {
 		this.specialite = specialite;
-	}
-
-	@Override
-	public String toString() {
-		return "DoctorDTO [registrationNumber=" + registrationNumber + ", specialite=" + specialite + "]";
 	}
 
 }

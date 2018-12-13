@@ -2,14 +2,41 @@ package com.hospital.is.service;
 
 import java.util.Map;
 
-public interface Service<T> {
-	
-	T create(T t);
+public interface Service<DTO, Entity> {
 
-	Map<Integer ,T> getAll();
+	/**
+	 * 
+	 * @param id
+	 * @param t
+	 * @return
+	 */
+	DTO create(long id, DTO t);
 
-	T getById(long id);
-	
-	T update(T t, long id);
+	/**
+	 * 
+	 * @return
+	 */
+	Map<Integer, DTO> getAll();
 
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 */
+	DTO getById(long id);
+
+	/**
+	 * 
+	 * @param t
+	 * @param id
+	 * @return
+	 */
+	DTO update(DTO t, long id);
+
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 */
+	boolean delete(long id);
 }
