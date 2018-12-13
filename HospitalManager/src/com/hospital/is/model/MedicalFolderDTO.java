@@ -72,14 +72,14 @@ public class MedicalFolderDTO {
 		this.appointmentMap = appointmentMap;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "MedicalFolder [diseaseMap=" + diseaseMap + "]";
+		return "MedicalFolderDTO [idMedicalFolder=" + idMedicalFolder + ", diseaseMap=" + diseaseMap
+				+ ", prescriptionMap=" + prescriptionMap + ", appointmentMap=" + appointmentMap + "]";
 	}
 
+	
 }

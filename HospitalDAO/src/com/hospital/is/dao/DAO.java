@@ -36,7 +36,7 @@ public interface DAO<T> {
 	/**
 	 * 
 	 * @param id
-	 * @return
+	 * @return delete the object
 	 */
 	boolean delete(long id);
 

@@ -35,15 +35,15 @@ public class PatientDTO extends PersonDTO  {
 		this.medicalFolder = medicalFolder;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "]";
+		return "PatientDTO" + super.toString() + "[idMedicalFolder=" + idMedicalFolder + ", medicalFolder=" + medicalFolder + "]";
 	}
+
+	
 
 	
 	

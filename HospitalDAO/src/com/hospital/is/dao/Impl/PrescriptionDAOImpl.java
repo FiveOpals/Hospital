@@ -12,16 +12,10 @@ import com.hospital.is.entity.Prescription;
  * @author user001
  *
  */
-public class PrescriptionDAOImpl extends DAOImpl<Prescription> implements PrescriptionDAO{
+public class PrescriptionDAOImpl extends DAOImpl<Prescription> implements PrescriptionDAO {
 
-	/**
-	 * 
-	 * @param dataSet - the constructor that call the parent constructor 
-	 */
 	public PrescriptionDAOImpl(Map<Integer, Prescription> dataSet) {
 		super(dataSet);
 	}
-
-
 
 }
