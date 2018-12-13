@@ -18,7 +18,7 @@ public class Patient extends Person {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
+
 	/**
 	 * @return the medicalFolder
 	 */
@@ -33,10 +33,6 @@ public class Patient extends Person {
 		this.medicalFolder = medicalFolder;
 	}
 
-	
-	
-	
-
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -44,7 +40,7 @@ public class Patient extends Person {
 	 */
 	@Override
 	public String toString() {
-		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "]";
+		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "]\n";
 	}
 
 }

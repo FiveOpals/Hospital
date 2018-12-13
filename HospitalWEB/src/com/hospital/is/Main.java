@@ -1,35 +1,33 @@
 package com.hospital.is;
 
-import java.util.HashMap;
 import java.util.Map;
 
-import com.hospital.is.model.AppointmentDTO;
-import com.hospital.is.model.MedicalFolderDTO;
 import com.hospital.is.model.PatientDTO;
-import com.hospital.is.service.AppointmentService;
-import com.hospital.is.service.impl.AppointmentServiceImpl;
+import com.hospital.is.service.PatientService;
+import com.hospital.is.service.impl.PatientServiceImpl;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		AppointmentService appointmentService = new AppointmentServiceImpl();
+//		AppointmentService appointmentService = new AppointmentServiceImpl();
+		PatientService patientService = new PatientServiceImpl();
 
-		Map<Integer, PatientDTO> mapPatient = new HashMap<Integer, PatientDTO>();
-		Map<Integer, AppointmentDTO> appointmentMap = appointmentService.getAll();
+//		Map<Integer, AppointmentDTO> mapAppointment = appointmentService.getAll();
+		Map<Integer, PatientDTO> mapPatient = patientService.getAll();
 
-		MedicalFolderDTO medicalFolderDTO = new MedicalFolderDTO();
-		medicalFolderDTO.setAppointmentMap(appointmentMap);
+//		AppointmentDTO appointmentDTO = new AppointmentDTO();
+//		AppointmentDTO appointmentDTO1 = new AppointmentDTO();
+//
+//		appointmentDTO.setDateTimeAppointment("02-07-2019");
+//		appointmentDTO.setTypeAppointment("Some type of appointment");
+//
+//		appointmentDTO1.setDateTimeAppointment("02-07-2019");
+//		appointmentDTO1.setTypeAppointment("Some type of appointment");
 
-		PatientDTO patientDTO = new PatientDTO();
-		patientDTO.setIdPerson(11);
-		patientDTO.setFirstName("Majda");
-		patientDTO.setLastName("AMCHICHI");
-		patientDTO.setBirthDate("12/09/1994");
-		patientDTO.setMedicalFolder(medicalFolderDTO);
+//		System.out.println("###" + appointmentDTO + "#####" + appointmentDTO1);
+//		mapAppointment.put(1, appointmentDTO);
 
-		System.out.println("###" + patientDTO + "###");
-		mapPatient.put(1, patientDTO);
 		System.out.println(mapPatient);
 	}
 }

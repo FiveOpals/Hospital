@@ -42,7 +42,7 @@ public class StaticDatabase {
 		patient1.setBirthDate("01/01/1978");
 		patient1.setPhone("+212 9 00 66 87 77");
 
-		patientMap.put(1, patient1);
+		patientMap.put(2, patient1);
 
 		/////////////////// INIT DISEASE/////////////////////
 
@@ -60,7 +60,7 @@ public class StaticDatabase {
 		disease1.setDescription("grippe description");
 		disease1.setDiagDate("06/02/2009");
 
-		diseaseMap.put(1, disease1);
+		diseaseMap.put(2, disease1);
 
 		///////////////// INIT MEDICAL FOLDER////////////////////
 
@@ -73,7 +73,7 @@ public class StaticDatabase {
 
 		//////////////// INIT RENDEZ-VOUS//////////////////////
 		AppointementMap = new HashMap<>();
-		
+
 		Appointment Appointement = new Appointment();
 		Appointment Appointement1 = new Appointment();
 
@@ -82,7 +82,7 @@ public class StaticDatabase {
 		Appointement1.setDateTimeAppointment("02-10-2018");
 		Appointement1.setTypeAppointment("Suivi traitement");
 
-		AppointementMap.put(1, Appointement);
+		AppointementMap.put(2, Appointement);
 
 	}
 }

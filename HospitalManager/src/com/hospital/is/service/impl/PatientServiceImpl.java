@@ -1,7 +1,11 @@
 package com.hospital.is.service.impl;
 
+import java.util.Map;
+
 import com.hospital.is.dao.DAO;
+import com.hospital.is.dao.PatientDAO;
 import com.hospital.is.dao.Impl.DAOImpl;
+import com.hospital.is.dao.Impl.PatientDAOImpl;
 import com.hospital.is.entity.Patient;
 import com.hospital.is.model.PatientDTO;
 import com.hospital.is.service.PatientService;
@@ -14,6 +18,14 @@ import com.hospital.is.transformers.PatientConverter;
 public class PatientServiceImpl extends ServiceImpl<PatientDTO, Patient> implements PatientService {
 
 	DAO<Patient> dao = new DAOImpl<Patient>();
+
+	private PatientDAO patientDAO = new PatientDAOImpl();
+
+	@Override
+	public Map<Integer, PatientDTO> getAll() {
+		PatientConverter patientConverter = new PatientConverter();
+		return patientConverter.toMapDTO(patientDAO.getAll());
+	}
 
 	/**
 	 * 
