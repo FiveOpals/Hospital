@@ -6,11 +6,12 @@ import com.hospital.is.dao.DAO;
 
 public class DAOImpl<T> implements DAO<T> {
 
-	protected Map<Integer, T> dataSet;
+	protected Map<Long, T> dataSet;
 
 	/**
 	 * 
-	 * @param dataSet the constructor no params
+	 * @param dataSet
+	 *            the constructor no params
 	 */
 	protected DAOImpl() {
 		super();
@@ -18,9 +19,10 @@ public class DAOImpl<T> implements DAO<T> {
 
 	/**
 	 * 
-	 * @param dataSet the constructor
+	 * @param dataSet
+	 *            the constructor
 	 */
-	public DAOImpl(Map<Integer, T> dataSet) {
+	public DAOImpl(Map<Long, T> dataSet) {
 		this.dataSet = dataSet;
 	}
 
@@ -28,7 +30,7 @@ public class DAOImpl<T> implements DAO<T> {
 	 * 
 	 * @return
 	 */
-	public Map<Integer, T> getDataSet() {
+	public Map<Long, T> getDataSet() {
 		return dataSet;
 	}
 
@@ -37,16 +39,16 @@ public class DAOImpl<T> implements DAO<T> {
 	 */
 	@Override
 	public T create(long id, T t) {
-		dataSet.put((int) id, t);
-		Map<Integer, T> tMap = dataSet;
-		return tMap.get((int) id);
+		dataSet.put((Long) id, t);
+		Map<Long, T> tMap = dataSet;
+		return tMap.get((Long) id);
 	}
 
 	/**
 	 * 
 	 */
 	@Override
-	public Map<Integer, T> getAll() {
+	public Map<Long, T> getAll() {
 		return dataSet;
 	}
 
@@ -55,7 +57,7 @@ public class DAOImpl<T> implements DAO<T> {
 	 */
 	@Override
 	public T getById(long id) {
-		return dataSet.get((int) id);
+		return dataSet.get((Long) id);
 
 	}
 
@@ -64,8 +66,8 @@ public class DAOImpl<T> implements DAO<T> {
 	 */
 	@Override
 	public T update(long id, T t) {
-		dataSet.put((int) id, t);
-		return dataSet.get((int) id);
+		dataSet.put((Long) id, t);
+		return dataSet.get((Long) id);
 	}
 
 	/**
@@ -73,7 +75,7 @@ public class DAOImpl<T> implements DAO<T> {
 	 */
 	@Override
 	public boolean delete(long id) {
-		return dataSet.remove((int) id) != null ? true : false;
+		return dataSet.remove((Long) id) != null ? true : false;
 	}
 
 }

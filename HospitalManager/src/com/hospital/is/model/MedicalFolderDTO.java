@@ -6,11 +6,11 @@ public class MedicalFolderDTO {
 
 	private long idMedicalFolder;
 
-	private Map<Integer, DiseaseDTO> diseaseMap;
+	private Map<Long, DiseaseDTO> diseaseMap;
 
-	private Map<Integer, PrescriptionDTO> prescriptionMap;
+	private Map<Long, PrescriptionDTO> prescriptionMap;
 
-	private Map<Integer, AppointmentDTO> appointmentMap;
+	private Map<Long, AppointmentDTO> appointmentMap;
 
 	/**
 	 * @return the idMedicalFolder
@@ -27,59 +27,34 @@ public class MedicalFolderDTO {
 		this.idMedicalFolder = idMedicalFolder;
 	}
 
-	/**
-	 * @return the diseaseMap
-	 */
-	public Map<Integer, DiseaseDTO> getDiseaseMap() {
+	public Map<Long, DiseaseDTO> getDiseaseMap() {
 		return diseaseMap;
 	}
 
-	/**
-	 * @param diseaseMap
-	 *            the diseaseMap to set
-	 */
-	public void setDiseaseMap(Map<Integer, DiseaseDTO> diseaseMap) {
+	public void setDiseaseMap(Map<Long, DiseaseDTO> diseaseMap) {
 		this.diseaseMap = diseaseMap;
 	}
 
-	/**
-	 * @return the prescriptionMap
-	 */
-	public Map<Integer, PrescriptionDTO> getPrescriptionMap() {
+	public Map<Long, PrescriptionDTO> getPrescriptionMap() {
 		return prescriptionMap;
 	}
 
-	/**
-	 * @param prescriptionMap
-	 *            the prescriptionMap to set
-	 */
-	public void setPrescriptionMap(Map<Integer, PrescriptionDTO> prescriptionMap) {
+	public void setPrescriptionMap(Map<Long, PrescriptionDTO> prescriptionMap) {
 		this.prescriptionMap = prescriptionMap;
 	}
 
-	/**
-	 * @return the appointmentMap
-	 */
-	public Map<Integer, AppointmentDTO> getAppointmentMap() {
+	public Map<Long, AppointmentDTO> getAppointmentMap() {
 		return appointmentMap;
 	}
 
-	/**
-	 * @param appointmentMap
-	 *            the appointmentMap to set
-	 */
-	public void setAppointmentMap(Map<Integer, AppointmentDTO> appointmentMap) {
+	public void setAppointmentMap(Map<Long, AppointmentDTO> appointmentMap) {
 		this.appointmentMap = appointmentMap;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "MedicalFolderDTO [idMedicalFolder=" + idMedicalFolder + ", diseaseMap=" + diseaseMap
 				+ ", prescriptionMap=" + prescriptionMap + ", appointmentMap=" + appointmentMap + "]";
 	}
 
-	
 }

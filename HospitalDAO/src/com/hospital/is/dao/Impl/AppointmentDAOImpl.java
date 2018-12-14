@@ -15,7 +15,7 @@ public class AppointmentDAOImpl extends DAOImpl<Appointment> implements Appointm
 	
 
 	public AppointmentDAOImpl() {
-		dataSet=StaticDatabase.AppointementMap;
+		dataSet=StaticDatabase.appointementMap;
 	}
 
 }

@@ -1,8 +1,5 @@
 package com.hospital.is;
 
-import java.util.Map;
-
-import com.hospital.is.model.PatientDTO;
 import com.hospital.is.service.PatientService;
 import com.hospital.is.service.impl.PatientServiceImpl;
 
@@ -27,7 +24,7 @@ public class Main {
 //		System.out.println("###" + appointmentDTO + "#####" + appointmentDTO1);
 //		mapAppointment.put(1, appointmentDTO);
 
-		System.out.println( patientService.getAll());
+		System.out.println(patientService.getAll());
 		System.out.println(patientService.delete(1));
 		System.out.println(patientService.getAll());
 

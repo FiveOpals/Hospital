@@ -22,7 +22,7 @@ public class PatientServiceImpl extends ServiceImpl<PatientDTO, Patient> impleme
 	private PatientDAO patientDAO = new PatientDAOImpl();
 
 	@Override
-	public Map<Integer, PatientDTO> getAll() {
+	public Map<Long, PatientDTO> getAll() {
 		PatientConverter patientConverter = new PatientConverter();
 		return patientConverter.toMapDTO(patientDAO.getAll());
 	}
@@ -58,17 +58,17 @@ public class PatientServiceImpl extends ServiceImpl<PatientDTO, Patient> impleme
 	 * @return
 	 */
 	@Override
-	public PatientDTO update(PatientDTO patientDTO, long id) {
+	public PatientDTO update(long id, PatientDTO patientDTO ) {
 		PatientConverter patientConverter = new PatientConverter();
 		Patient patient = patientConverter.toEntity(patientDTO);
-		Patient patientDto = dao.update(id, patient);
+		Patient patientDto = patientDAO.update(id, patient);
 		return patientConverter.toDTO(patientDto);
 	}
 
 	@Override
 	public boolean delete(long id) {
 
-		return dao.delete(id);
+		return patientDAO.delete(id);
 
 	}
 

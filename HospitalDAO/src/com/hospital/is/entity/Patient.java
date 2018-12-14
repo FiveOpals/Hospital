@@ -2,21 +2,17 @@ package com.hospital.is.entity;
 
 public class Patient extends Person {
 
-	private Integer id;
+	private Long idPatient;
 	private MedicalFolder medicalFolder;
 
-	/**
-	 * @return the id
-	 */
-	public long getId() {
-		return id;
+	
+
+	public Long getIdPatient() {
+		return idPatient;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
+	public void setIdPatient(Long idPatient) {
+		this.idPatient = idPatient;
 	}
 
 	/**

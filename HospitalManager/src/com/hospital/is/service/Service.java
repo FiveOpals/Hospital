@@ -16,7 +16,7 @@ public interface Service<DTO, Entity> {
 	 * 
 	 * @return
 	 */
-	Map<Integer, DTO> getAll();
+	Map<Long, DTO> getAll();
 
 	/**
 	 * 
@@ -31,7 +31,7 @@ public interface Service<DTO, Entity> {
 	 * @param id
 	 * @return
 	 */
-	DTO update(DTO t, long id);
+	DTO update(long id,DTO t);
 
 	/**
 	 * 
