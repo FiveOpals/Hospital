@@ -4,40 +4,26 @@ import java.util.Map;
 
 public class Prescription {
 
-	private Integer id;
-	
-	private Map<Integer, Medication> medicationlist;
-	
+	private Long idPrescription;
+
+	private Map<Long, Medication> medicationMap;
+
 	private String descriptionOfUse;
 
-	
-	
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
+	public Long getIdPrescription() {
+		return idPrescription;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
+	public void setIdPrescription(Long idPrescription) {
+		this.idPrescription = idPrescription;
 	}
 
-	/**
-	 * @return the medicationlist
-	 */
-	public Map<Integer, Medication> getMedicationlist() {
-		return medicationlist;
+	public Map<Long, Medication> getMedicationMap() {
+		return medicationMap;
 	}
 
-	/**
-	 * @param medicationlist the medicationlist to set
-	 */
-	public void setMedicationlist(Map<Integer, Medication> medicationlist) {
-		this.medicationlist = medicationlist;
+	public void setMedicationMap(Map<Long, Medication> medicationMap) {
+		this.medicationMap = medicationMap;
 	}
 
 	/**
@@ -48,21 +34,22 @@ public class Prescription {
 	}
 
 	/**
-	 * @param descriptionOfUse the descriptionOfUse to set
+	 * @param descriptionOfUse
+	 *            the descriptionOfUse to set
 	 */
 	public void setDescriptionOfUse(String descriptionOfUse) {
 		this.descriptionOfUse = descriptionOfUse;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Prescription [id=" + id + ", medicationlist=" + medicationlist + ", descriptionOfUse="
-				+ descriptionOfUse + "]";
+		return "Prescription [idPrescription=" + idPrescription + ", medicationMap=" + medicationMap
+				+ ", descriptionOfUse=" + descriptionOfUse + "]";
 	}
-	
-	
-	
+
 }

@@ -10,8 +10,7 @@ public class Appointment {
 
 	private Doctor doctor;
 
-
-	private Map<Integer, Prescription> prescriptionMap;
+	private Map<Long, Prescription> prescriptionMap;
 
 	/**
 	 * @return the dateTimeAppointment
@@ -21,7 +20,8 @@ public class Appointment {
 	}
 
 	/**
-	 * @param dateTimeAppointment the dateTimeAppointment to set
+	 * @param dateTimeAppointment
+	 *            the dateTimeAppointment to set
 	 */
 	public void setDateTimeAppointment(String dateTimeAppointment) {
 		this.dateTimeAppointment = dateTimeAppointment;
@@ -35,7 +35,8 @@ public class Appointment {
 	}
 
 	/**
-	 * @param typeAppointment the typeAppointment to set
+	 * @param typeAppointment
+	 *            the typeAppointment to set
 	 */
 	public void setTypeAppointment(String typeAppointment) {
 		this.typeAppointment = typeAppointment;
@@ -49,32 +50,25 @@ public class Appointment {
 	}
 
 	/**
-	 * @param doctor the doctor to set
+	 * @param doctor
+	 *            the doctor to set
 	 */
 	public void setDoctor(Doctor doctor) {
 		this.doctor = doctor;
 	}
 
-	/**
-	 * @return the prescriptionList
-	 */
-	public Map<Integer, Prescription> getPrescriptionMap() {
+	public Map<Long, Prescription> getPrescriptionMap() {
 		return prescriptionMap;
 	}
 
-	/**
-	 * @param prescriptionList the prescriptionList to set
-	 */
-	public void setPrescriptionMap(Map<Integer, Prescription> prescriptionMap) {
+	public void setPrescriptionMap(Map<Long, Prescription> prescriptionMap) {
 		this.prescriptionMap = prescriptionMap;
 	}
 
-	
 	@Override
 	public String toString() {
 		return "Appointment [dateTimeAppointment=" + dateTimeAppointment + ", typeAppointment=" + typeAppointment
 				+ ", doctor=" + doctor + ", prescriptionMap=" + prescriptionMap + "]";
 	}
-	
-	
+
 }

@@ -5,17 +5,10 @@ import java.util.Map;
 public class PrescriptionDTO {
 
 	private long idPrescription;
-	
-	private Map<Integer, MedicationDTO> medicationMap;
+
+	private Map<Long, MedicationDTO> medicationMap;
 
 	private String descriptionOfUse;
-
-	/**
-	 * @return the medicationMap
-	 */
-	public Map<Integer, MedicationDTO> getMedicationMap() {
-		return medicationMap;
-	}
 
 	/**
 	 * @return the idPrescription
@@ -25,17 +18,19 @@ public class PrescriptionDTO {
 	}
 
 	/**
-	 * @param idPrescription the idPrescription to set
+	 * @param idPrescription
+	 *            the idPrescription to set
 	 */
 	public void setIdPrescription(long idPrescription) {
 		this.idPrescription = idPrescription;
 	}
+	
+	
+	public Map<Long, MedicationDTO> getMedicationMap() {
+		return medicationMap;
+	}
 
-	/**
-	 * @param medicationMap
-	 *            the medicationMap to set
-	 */
-	public void setMedicationMap(Map<Integer, MedicationDTO> medicationMap) {
+	public void setMedicationMap(Map<Long, MedicationDTO> medicationMap) {
 		this.medicationMap = medicationMap;
 	}
 

@@ -4,7 +4,7 @@ public class DoctorDTO extends PersonDTO {
 
 	private long idDoctor;
 
-	private Integer registrationNumber;
+	private Long registrationNumber;
 
 	private String specialite;
 
@@ -23,18 +23,11 @@ public class DoctorDTO extends PersonDTO {
 		this.idDoctor = idDoctor;
 	}
 
-	/**
-	 * @return the registrationNumber
-	 */
-	public Integer getRegistrationNumber() {
+	public Long getRegistrationNumber() {
 		return registrationNumber;
 	}
 
-	/**
-	 * @param registrationNumber
-	 *            the registrationNumber to set
-	 */
-	public void setRegistrationNumber(Integer registrationNumber) {
+	public void setRegistrationNumber(Long registrationNumber) {
 		this.registrationNumber = registrationNumber;
 	}
 

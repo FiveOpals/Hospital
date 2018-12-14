@@ -2,21 +2,21 @@ package com.hospital.is.entity;
 
 public class Doctor extends Person {
 		
-	private Integer registrationNumber;
+	private Long registrationNumber;
 	
 	private String specialite;
 
 	/**
 	 * @return the registrationNumber
 	 */
-	public Integer getRegistrationNumber() {
+	public Long getRegistrationNumber() {
 		return registrationNumber;
 	}
 
 	/**
 	 * @param registrationNumber the registrationNumber to set
 	 */
-	public void setRegistrationNumber(Integer registrationNumber) {
+	public void setRegistrationNumber(Long registrationNumber) {
 		this.registrationNumber = registrationNumber;
 	}
 
@@ -39,7 +39,7 @@ public class Doctor extends Person {
 	 */
 	@Override
 	public String toString() {
-		return "Doctor [registrationNumber=" + registrationNumber + ", specialite=" + specialite + "]";
+		return super.toString()+"Doctor [registrationNumber=" + registrationNumber + ", specialite=" + specialite + "]";
 	}
 
 	

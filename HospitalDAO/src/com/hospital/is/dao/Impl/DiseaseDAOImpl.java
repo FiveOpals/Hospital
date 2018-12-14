@@ -11,7 +11,7 @@ import com.hospital.is.entity.Disease;;
  */
 public class DiseaseDAOImpl extends DAOImpl<Disease> implements DiseaseDAO {
 
-	public DiseaseDAOImpl(Map<Integer, Disease> dataSet) {
+	public DiseaseDAOImpl(Map<Long, Disease> dataSet) {
 		super(dataSet);
 		}
 

@@ -22,7 +22,7 @@ public class ServiceImpl<DTO, Entity> implements Service<DTO, Entity> {
 	 * 
 	 */
 	@Override
-	public Map<Integer, DTO> getAll() {
+	public Map<Long, DTO> getAll() {
 		return null;
 	}
 
@@ -38,7 +38,7 @@ public class ServiceImpl<DTO, Entity> implements Service<DTO, Entity> {
 	 * 
 	 */
 	@Override
-	public DTO update(DTO t, long id) {
+	public DTO update( long id , DTO t) {
 		return null;
 	}
 

@@ -7,7 +7,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		AppointmentDAO adao = new AppointmentDAOImpl(StaticDatabase.AppointementMap);
+		AppointmentDAO adao = new AppointmentDAOImpl(StaticDatabase.appointementMap);
 		System.out.println(adao.getAll());
 
 		

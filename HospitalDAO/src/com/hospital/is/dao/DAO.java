@@ -8,16 +8,16 @@ public interface DAO<T> {
 	 * 
 	 * @param id
 	 * @param t
-	 * @return the created object T 
+	 * @return the created object T
 	 */
 	T create(long id, T t);
 
 	/**
 	 * 
-	 * @return a Map <Integer, T> 
+	 * @return a Map <Integer, T>
 	 */
-	Map<Integer, T> getAll();
-	
+	Map<Long, T> getAll();
+
 	/**
 	 * 
 	 * @param id
@@ -32,7 +32,7 @@ public interface DAO<T> {
 	 * @return update the object passed in the parameters
 	 */
 	T update(long id, T t);
-	
+
 	/**
 	 * 
 	 * @param id

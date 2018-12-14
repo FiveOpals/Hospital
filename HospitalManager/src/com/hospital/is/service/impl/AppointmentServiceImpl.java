@@ -49,7 +49,7 @@ public class AppointmentServiceImpl extends ServiceImpl<AppointmentDTO, Appointm
 	 * @return
 	 */
 	@Override
-	public AppointmentDTO update(AppointmentDTO appointmentDTO, long id) {
+	public AppointmentDTO update(long id,AppointmentDTO appointmentDTO) {
 		AppointmentConverter appointmentConverter = new AppointmentConverter();
 		Appointment appointment = appointmentConverter.toEntity(appointmentDTO);
 		Appointment appointmentDto = dao.update(id, appointment);

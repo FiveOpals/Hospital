@@ -14,7 +14,7 @@ import com.hospital.is.entity.Prescription;
  */
 public class PrescriptionDAOImpl extends DAOImpl<Prescription> implements PrescriptionDAO {
 
-	public PrescriptionDAOImpl(Map<Integer, Prescription> dataSet) {
+	public PrescriptionDAOImpl(Map<Long, Prescription> dataSet) {
 		super(dataSet);
 	}
 

@@ -2,30 +2,22 @@ package com.hospital.is.entity;
 
 public class Medication {
 
-	private Integer id;
-	
+	private Long idMedication;
+
 	private String medicationName;
 
 	private Integer quantity;
-	
+
 	private String durationOfUse;
-	
+
 	private String instrutionOfUse;
 
-	
-	
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
+	public Long getIdMedication() {
+		return idMedication;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
+	public void setIdMedication(Long idMedication) {
+		this.idMedication = idMedication;
 	}
 
 	/**
@@ -36,7 +28,8 @@ public class Medication {
 	}
 
 	/**
-	 * @param medicationName the medicationName to set
+	 * @param medicationName
+	 *            the medicationName to set
 	 */
 	public void setMedicationName(String medicationName) {
 		this.medicationName = medicationName;
@@ -50,7 +43,8 @@ public class Medication {
 	}
 
 	/**
-	 * @param quantity the quantity to set
+	 * @param quantity
+	 *            the quantity to set
 	 */
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
@@ -64,7 +58,8 @@ public class Medication {
 	}
 
 	/**
-	 * @param durationOfUse the durationOfUse to set
+	 * @param durationOfUse
+	 *            the durationOfUse to set
 	 */
 	public void setDurationOfUse(String durationOfUse) {
 		this.durationOfUse = durationOfUse;
@@ -78,21 +73,22 @@ public class Medication {
 	}
 
 	/**
-	 * @param instrutionOfUse the instrutionOfUse to set
+	 * @param instrutionOfUse
+	 *            the instrutionOfUse to set
 	 */
 	public void setInstrutionOfUse(String instrutionOfUse) {
 		this.instrutionOfUse = instrutionOfUse;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Medication [id=" + id + ", medicationName=" + medicationName + ", quantity=" + quantity
+		return "Medication [idMedication=" + idMedication + ", medicationName=" + medicationName + ", quantity=" + quantity
 				+ ", durationOfUse=" + durationOfUse + ", instrutionOfUse=" + instrutionOfUse + "]";
 	}
-	
-	
-	
+
 }

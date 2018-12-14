@@ -1,8 +1,9 @@
 package com.hospital.is.entity;
 
 public class Disease {
-	private Integer id;
-	
+
+	private Long idDisease;
+
 	private String nature;
 
 	private String description;
@@ -11,18 +12,12 @@ public class Disease {
 
 	private String diagDate;
 
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
+	public Long getIdDisease() {
+		return idDisease;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
+	public void setIdDisease(Long idDisease) {
+		this.idDisease = idDisease;
 	}
 
 	/**
@@ -33,7 +28,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param nature the nature to set
+	 * @param nature
+	 *            the nature to set
 	 */
 	public void setNature(String nature) {
 		this.nature = nature;
@@ -47,7 +43,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param description the description to set
+	 * @param description
+	 *            the description to set
 	 */
 	public void setDescription(String description) {
 		this.description = description;
@@ -61,7 +58,8 @@ public class Disease {
 	}
 
 	/**
-	 * @param state the state to set
+	 * @param state
+	 *            the state to set
 	 */
 	public void setState(String state) {
 		this.state = state;
@@ -75,21 +73,22 @@ public class Disease {
 	}
 
 	/**
-	 * @param diagDate the diagDate to set
+	 * @param diagDate
+	 *            the diagDate to set
 	 */
 	public void setDiagDate(String diagDate) {
 		this.diagDate = diagDate;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Disease [id=" + id + ", nature=" + nature + ", description=" + description + ", state=" + state
+		return "Disease [idDisease=" + idDisease + ", nature=" + nature + ", description=" + description + ", state=" + state
 				+ ", diagDate=" + diagDate + "]";
 	}
-
-	
 
 }

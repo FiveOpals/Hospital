@@ -14,7 +14,7 @@ import com.hospital.is.entity.Appointment;
  */
 public class AppointmentDAOImpl extends DAOImpl<Appointment> implements AppointmentDAO {
 
-	public AppointmentDAOImpl(Map<Integer, Appointment> dataSet) {
+	public AppointmentDAOImpl(Map<Long, Appointment> dataSet) {
 		super(dataSet);
 	}
 

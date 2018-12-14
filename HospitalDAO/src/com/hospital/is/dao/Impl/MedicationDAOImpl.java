@@ -12,12 +12,10 @@ import com.hospital.is.entity.Medication;
  * @author user001
  *
  */
-public class MedicationDAOImpl  extends DAOImpl<Medication> implements MedicationDAO {
+public class MedicationDAOImpl extends DAOImpl<Medication> implements MedicationDAO {
 
-	public MedicationDAOImpl(Map<Integer, Medication> dataSet) {
+	public MedicationDAOImpl(Map<Long, Medication> dataSet) {
 		super(dataSet);
 	}
-
-	
 
 }
