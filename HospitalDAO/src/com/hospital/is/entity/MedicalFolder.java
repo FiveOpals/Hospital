@@ -35,6 +35,12 @@ public class MedicalFolder {
 		this.appointmentMap = appointmentMap;
 	}
 
+	@Override
+	public String toString() {
+		return "MedicalFolder [diseaseMap=" + diseaseMap + ", prescriptionMap=" + prescriptionMap + ", appointmentMap="
+				+ appointmentMap + "]";
+	}
+
 	
 	
 }

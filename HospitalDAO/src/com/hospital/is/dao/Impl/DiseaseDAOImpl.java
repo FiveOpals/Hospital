@@ -2,6 +2,7 @@ package com.hospital.is.dao.Impl;
 
 import java.util.Map;
 
+import com.hospital.is.StaticDatabase;
 import com.hospital.is.dao.DiseaseDAO;
 import com.hospital.is.entity.Disease;;
 
@@ -12,7 +13,7 @@ import com.hospital.is.entity.Disease;;
 public class DiseaseDAOImpl extends DAOImpl<Disease> implements DiseaseDAO {
 
 	public DiseaseDAOImpl(Map<Integer, Disease> dataSet) {
-		super(dataSet);
+		dataSet=StaticDatabase.diseaseMap;
 		}
 
 	

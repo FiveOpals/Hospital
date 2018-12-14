@@ -39,7 +39,7 @@ public class Doctor extends Person {
 	 */
 	@Override
 	public String toString() {
-		return "Doctor [registrationNumber=" + registrationNumber + ", specialite=" + specialite + "]";
+		return "Doctor [registrationNumber=" + registrationNumber + super.toString() + " , specialite=" + specialite + "]";
 	}
 
 	

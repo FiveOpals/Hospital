@@ -5,6 +5,7 @@ package com.hospital.is.dao.Impl;
 
 import java.util.Map;
 
+import com.hospital.is.StaticDatabase;
 import com.hospital.is.dao.MedicationDAO;
 import com.hospital.is.entity.Medication;
 
@@ -14,8 +15,9 @@ import com.hospital.is.entity.Medication;
  */
 public class MedicationDAOImpl  extends DAOImpl<Medication> implements MedicationDAO {
 
-	public MedicationDAOImpl(Map<Integer, Medication> dataSet) {
-		super(dataSet);
+	private MedicationDAOImpl(Map<Integer, Medication> dataSet) {
+		//TODO fill medication dataset
+		dataSet=null;
 	}
 
 	

@@ -102,7 +102,7 @@ public abstract class Person {
 	 */
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", phone=" + phone
+		return " firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", phone=" + phone
 				+ ", birthDate=" + birthDate + "]";
 	}
 
