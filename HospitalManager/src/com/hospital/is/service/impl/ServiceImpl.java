@@ -8,8 +8,6 @@ import com.hospital.is.service.Service;
 
 public class ServiceImpl<DTO, Entity> implements Service<DTO, Entity> {
 
-	DAO<Entity> dao = new DAOImpl<Entity>();
-
 	/**
 	 * 
 	 */
@@ -47,8 +45,7 @@ public class ServiceImpl<DTO, Entity> implements Service<DTO, Entity> {
 	 */
 	@Override
 	public boolean delete(long id) {
-		DAO<DTO> dao = new DAOImpl<DTO>();
-		return dao.delete(id);
+		return false;
 	}
 
 }

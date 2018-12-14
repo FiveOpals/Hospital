@@ -3,8 +3,7 @@
  */
 package com.hospital.is.dao.Impl;
 
-import java.util.Map;
-
+import com.hospital.is.StaticDatabase;
 import com.hospital.is.dao.AppointmentDAO;
 import com.hospital.is.entity.Appointment;
 
@@ -13,9 +12,10 @@ import com.hospital.is.entity.Appointment;
  *
  */
 public class AppointmentDAOImpl extends DAOImpl<Appointment> implements AppointmentDAO {
+	
 
-	public AppointmentDAOImpl(Map<Integer, Appointment> dataSet) {
-		super(dataSet);
+	public AppointmentDAOImpl() {
+		dataSet=StaticDatabase.AppointementMap;
 	}
 
 }

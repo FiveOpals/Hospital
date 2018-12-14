@@ -14,7 +14,6 @@ public class Main {
 		PatientService patientService = new PatientServiceImpl();
 
 //		Map<Integer, AppointmentDTO> mapAppointment = appointmentService.getAll();
-		Map<Integer, PatientDTO> mapPatient = patientService.getAll();
 
 //		AppointmentDTO appointmentDTO = new AppointmentDTO();
 //		AppointmentDTO appointmentDTO1 = new AppointmentDTO();
@@ -28,6 +27,9 @@ public class Main {
 //		System.out.println("###" + appointmentDTO + "#####" + appointmentDTO1);
 //		mapAppointment.put(1, appointmentDTO);
 
-		System.out.println(mapPatient);
+		System.out.println( patientService.getAll());
+		System.out.println(patientService.delete(1));
+		System.out.println(patientService.getAll());
+
 	}
 }

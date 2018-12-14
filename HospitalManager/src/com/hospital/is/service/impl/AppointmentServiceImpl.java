@@ -4,6 +4,7 @@
 package com.hospital.is.service.impl;
 
 import com.hospital.is.dao.DAO;
+import com.hospital.is.dao.Impl.AppointmentDAOImpl;
 import com.hospital.is.dao.Impl.DAOImpl;
 import com.hospital.is.entity.Appointment;
 import com.hospital.is.model.AppointmentDTO;
@@ -16,7 +17,7 @@ import com.hospital.is.transformers.AppointmentConverter;
  */
 public class AppointmentServiceImpl extends ServiceImpl<AppointmentDTO, Appointment> implements AppointmentService {
 
-	DAO<Appointment> dao = new DAOImpl<Appointment>();
+	DAO<Appointment> dao = new AppointmentDAOImpl();
 
 	/**
 	 * 

@@ -12,7 +12,7 @@ public class DAOImpl<T> implements DAO<T> {
 	 * 
 	 * @param dataSet the constructor no params
 	 */
-	public DAOImpl() {
+	protected DAOImpl() {
 		super();
 	}
 
@@ -73,8 +73,7 @@ public class DAOImpl<T> implements DAO<T> {
 	 */
 	@Override
 	public boolean delete(long id) {
-		return dataSet.remove((int) id) == null ? true : false;
-
+		return dataSet.remove((int) id) != null ? true : false;
 	}
 
 }

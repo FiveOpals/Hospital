@@ -17,8 +17,8 @@ import com.hospital.is.transformers.PatientConverter;
  */
 public class PatientServiceImpl extends ServiceImpl<PatientDTO, Patient> implements PatientService {
 
-	DAO<Patient> dao = new DAOImpl<Patient>();
-
+	DAO<Patient> dao = new PatientDAOImpl();
+	
 	private PatientDAO patientDAO = new PatientDAOImpl();
 
 	@Override
