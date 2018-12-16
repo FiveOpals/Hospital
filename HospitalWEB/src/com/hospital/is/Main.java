@@ -1,5 +1,6 @@
 package com.hospital.is;
 
+import com.hospital.is.model.PatientDTO;
 import com.hospital.is.service.PatientService;
 import com.hospital.is.service.impl.PatientServiceImpl;
 
@@ -7,25 +8,28 @@ public class Main {
 
 	public static void main(String[] args) {
 
-//		AppointmentService appointmentService = new AppointmentServiceImpl();
+		// initialisation
 		PatientService patientService = new PatientServiceImpl();
 
-//		Map<Integer, AppointmentDTO> mapAppointment = appointmentService.getAll();
+		// Create / Add
+		PatientDTO patient = new PatientDTO();
 
-//		AppointmentDTO appointmentDTO = new AppointmentDTO();
-//		AppointmentDTO appointmentDTO1 = new AppointmentDTO();
-//
-//		appointmentDTO.setDateTimeAppointment("02-07-2019");
-//		appointmentDTO.setTypeAppointment("Some type of appointment");
-//
-//		appointmentDTO1.setDateTimeAppointment("02-07-2019");
-//		appointmentDTO1.setTypeAppointment("Some type of appointment");
-
-//		System.out.println("###" + appointmentDTO + "#####" + appointmentDTO1);
-//		mapAppointment.put(1, appointmentDTO);
-
-		System.out.println(patientService.getAll());
-		System.out.println(patientService.delete(1));
+		patient.setMedicalFolder(/* getMedicalFolderMap().get(0) */null);
+		patient.setFirstName("Prénom premier patient");
+		patient.setLastName("Nom premier patient");
+		patient.setAddress("30 rue soulaimane achaairi, 20500, Tetouan Maroc");
+		patient.setBirthDate("01/01/1970");
+		patient.setPhone("+212 6 66 77 88 99");
+		
+		System.out.println("Creation :\n"+patientService.create(377, patient));
+		//LECTURE
+		//	Lecture total
+		System.out.println("Lecture total :\n"+patientService.getAll());
+		//	Lecture unitaire
+		long id=377;
+		System.out.println("Lecture unitaire "+"id = "+id+"\n"+patientService.getById(id));
+		//	Supression
+		System.out.println("Suppression : "+ (patientService.delete(377)==true?"succes":"fail"));
 		System.out.println(patientService.getAll());
 
 	}

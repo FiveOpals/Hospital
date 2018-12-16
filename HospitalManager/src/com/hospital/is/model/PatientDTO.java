@@ -5,6 +5,17 @@ public class PatientDTO extends PersonDTO  {
 	private long idMedicalFolder;
 	
 	private MedicalFolderDTO medicalFolder;
+	
+	
+	public PatientDTO() {
+		super();
+	}
+
+	public PatientDTO(long idPerson, String firstName, String lastName, String address, String phone, String birthDate,long idMedicalFolder, MedicalFolderDTO medicalFolder) {
+		super();
+		this.idMedicalFolder = idMedicalFolder;
+		this.medicalFolder = medicalFolder;
+	}
 
 	/**
 	 * @return the idMedicalFolder
@@ -40,7 +51,7 @@ public class PatientDTO extends PersonDTO  {
 	 */
 	@Override
 	public String toString() {
-		return "PatientDTO" + super.toString() + "[idMedicalFolder=" + idMedicalFolder + ", medicalFolder=" + medicalFolder + "]";
+		return "PatientDTO" + super.toString() + "[\n\tidMedicalFolder=" + idMedicalFolder + ", \n\tmedicalFolder=" + medicalFolder + "]\n";
 	}
 
 	

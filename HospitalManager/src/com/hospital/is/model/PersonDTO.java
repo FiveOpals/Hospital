@@ -35,8 +35,25 @@ public abstract class PersonDTO {
 	/**
 	 * @return the idPerson
 	 */
+	
+	
 	public long getIdPerson() {
 		return idPerson;
+	}
+
+	
+	public PersonDTO() {
+		super();
+	}
+	
+	public PersonDTO(long idPerson, String firstName, String lastName, String address, String phone, String birthDate) {
+		super();
+		this.idPerson = idPerson;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.phone = phone;
+		this.birthDate = birthDate;
 	}
 
 	/**
@@ -129,8 +146,8 @@ public abstract class PersonDTO {
 	 */
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", phone=" + phone
-				+ ", birthDate=" + birthDate + "]";
+		return "Person [\n\tfirstName=" + firstName + ", \n\tlastName=" + lastName + ", \n\taddress=" + address + ", \n\tphone=" + phone
+				+ ", \n\tbirthDate=" + birthDate + "]";
 	}
 
 }
