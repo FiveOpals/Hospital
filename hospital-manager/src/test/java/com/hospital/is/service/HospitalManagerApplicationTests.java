@@ -1,4 +1,4 @@
-package com.hospital.is;
+package com.hospital.is.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

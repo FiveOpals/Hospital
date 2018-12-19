@@ -2,6 +2,7 @@ package com.hospital.is.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,9 +28,9 @@ public class PatientServiceImpl implements PatientService {
 	@Override
 	public PatientDTO create(PatientDTO dto) {
 		Patient patientToBeCreated = converter.toEntity(dto);
-
+		//traitement
 		Patient createdPatient = patientRepository.save(patientToBeCreated);
-
+		// traitement
 		return converter.toDTO(createdPatient);
 	}
 
@@ -44,21 +45,34 @@ public class PatientServiceImpl implements PatientService {
 	}
 
 	@Override
-	public PatientDTO getById(long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public PatientDTO update(PatientDTO t, long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public PatientDTO getById(long id) throws Exception {
+		Optional<Patient> patient = patientRepository.findById(id);
+		if (patient.isPresent()) {
+			return converter.toDTO(patient.get());
+		} else {
+			throw new Exception();
+		}
 	}
 
 	@Override
 	public void delete(long id) {
-		// TODO Auto-generated method stub
+		patientRepository.deleteById(id);
+	}
 
+	@Override
+	public List<PatientDTO> findByFirstName(String firstName) {
+		List<PatientDTO> result = new ArrayList<>();
+		for (Patient patient : patientRepository.findByFirstName(firstName)) {
+			result.add(converter.toDTO(patient));
+		}
+		return result;
+	}
+
+	@Override
+	public PatientDTO update(Long id, PatientDTO dto) throws Exception {
+		getById(id);
+		dto.setId(id);
+		return converter.toDTO(patientRepository.save(converter.toEntity(dto)));
 	}
 
 }

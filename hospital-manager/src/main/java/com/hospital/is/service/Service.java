@@ -8,9 +8,9 @@ public interface Service<T> {
 
 	List<T> getAll();
 
-	T getById(long id);
+	T getById(long id) throws Exception;
 
-	T update(T t, long id);
+	T update(Long id, T t) throws Exception;
 
 	void delete(long id);
 }

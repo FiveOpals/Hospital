@@ -33,15 +33,15 @@ public class DoctorServiceImpl implements DoctorService {
 	}
 
 	@Override
-	public Doctor update(Doctor t, long id) {
+	public void delete(long id) {
 		// TODO Auto-generated method stub
-		return null;
+
 	}
 
 	@Override
-	public void delete(long id) {
+	public Doctor update(Long id, Doctor t) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 }

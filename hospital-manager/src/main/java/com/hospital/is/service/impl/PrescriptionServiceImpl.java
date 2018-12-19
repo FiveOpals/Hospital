@@ -32,16 +32,17 @@ public class PrescriptionServiceImpl implements PrescriptionService {
 		return null;
 	}
 
-	@Override
-	public Prescription update(Prescription t, long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public void delete(long id) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public Prescription update(Long id, Prescription t) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

@@ -33,15 +33,15 @@ public class AppointmentServiceImpl implements AppointmentService {
 	}
 
 	@Override
-	public AppointmentDTO update(AppointmentDTO t, long id) {
+	public void delete(long id) {
 		// TODO Auto-generated method stub
-		return null;
+
 	}
 
 	@Override
-	public void delete(long id) {
+	public AppointmentDTO update(Long id, AppointmentDTO t) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 }

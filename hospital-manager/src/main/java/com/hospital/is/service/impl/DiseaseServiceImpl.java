@@ -30,15 +30,15 @@ public class DiseaseServiceImpl implements DiseaseService {
 	}
 
 	@Override
-	public Disease update(Disease t, long id) {
+	public void delete(long id) {
 		// TODO Auto-generated method stub
-		return null;
+
 	}
 
 	@Override
-	public void delete(long id) {
+	public Disease update(Long id, Disease t) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 }

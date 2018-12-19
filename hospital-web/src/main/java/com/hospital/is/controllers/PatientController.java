@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hospital.is.model.PatientDTO;
@@ -26,14 +27,19 @@ public class PatientController {
 		return patientService.getAll();
 	}
 
+	@GetMapping("/findByFirstName")
+	public List<PatientDTO> findByFirstName(@RequestParam String firstName) {
+		return patientService.findByFirstName(firstName);
+	}
+
 	@GetMapping("/{id}")
 	public String getById(@PathVariable Long id) {
 		return "mon patient numéro : " + id;
 	}
 
 	@PutMapping("/{id}")
-	public PatientDTO create(@PathVariable Long id, @RequestBody PatientDTO dto) {
-		return patientService.update(dto, id);
+	public PatientDTO update(@PathVariable Long id, @RequestBody PatientDTO dto) throws Exception {
+		return patientService.update(id, dto);
 	}
 
 	@PostMapping

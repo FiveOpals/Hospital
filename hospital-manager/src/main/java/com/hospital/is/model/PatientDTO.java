@@ -18,15 +18,15 @@ public class PatientDTO extends PersonDTO implements Comparable<PatientDTO> {
 		this.medicalFolder = medicalFolder;
 	}
 
-//	/*
-//	 * (non-Javadoc)
-//	 * 
-//	 * @see java.lang.Object#toString()
-//	 */
-//	@Override
-//	public String toString() {
-//		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "] MRS ";
-//	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Patient " + super.toString() + " [medicalFolder=" + medicalFolder + "] MRS ";
+	}
 
 	@Override
 	public int compareTo(PatientDTO o) {

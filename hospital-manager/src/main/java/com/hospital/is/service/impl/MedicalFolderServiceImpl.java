@@ -30,15 +30,15 @@ public class MedicalFolderServiceImpl implements MedicalFolderService {
 	}
 
 	@Override
-	public MedicalFolder update(MedicalFolder t, long id) {
+	public void delete(long id) {
 		// TODO Auto-generated method stub
-		return null;
+
 	}
 
 	@Override
-	public void delete(long id) {
+	public MedicalFolder update(Long id, MedicalFolder t) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 }

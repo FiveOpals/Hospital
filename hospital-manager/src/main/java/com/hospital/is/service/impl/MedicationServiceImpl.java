@@ -33,18 +33,15 @@ public class MedicationServiceImpl implements MedicationService {
 	}
 
 	@Override
-	public Medication update(Medication t, long id) {
+	public void delete(long id) {
 		// TODO Auto-generated method stub
-		return null;
+
 	}
 
 	@Override
-	public void delete(long id) {
+	public Medication update(Long id, Medication t) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
-
-
-	
 
 }

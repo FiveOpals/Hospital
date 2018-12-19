@@ -107,13 +107,15 @@ public abstract class PersonDTO {
 		this.id = id;
 	}
 
-//	/* (non-Javadoc)
-//	 * @see java.lang.Object#toString()
-//	 */
-//	@Override
-//	public String toString() {
-//		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", phone=" + phone
-//				+ ", birthDate=" + birthDate + "]";
-//	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", phone=" + phone
+				+ ", birthDate=" + birthDate + "]";
+	}
 
 }
