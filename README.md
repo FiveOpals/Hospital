@@ -2,14 +2,14 @@
 Hospital Management Project in Java Course at Everis.
 This project is based on Spring boot and angular technologies.
 
-Angular source code is in hospital-interface folder.
+Angular source code is in "hospital-interface" folder.
 
 ## Run instructions:
 
 =>  Open project using eclipse and run it (from web-layer as Spring boot application)
 
 /**
-  As angular project (hospital-interface) already compiled and integrated with the main project,
+  As angular project (hospital-interface) already compiled and integrated (hospital-web\static) with the main project,
   it should run in the localhost:8080.
 */
 
