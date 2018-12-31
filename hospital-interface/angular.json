@@ -27,9 +27,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass",
+              "src/css/bootstrap.css",
+              "src/css/bootstrap-grid.css",
+              "src/css/bootstrap-reboot.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery.js",
+              "src/js/bootstrap.bundle.js",
+              "src/js/bootstrap.js"
+
+            ]
           },
           "configurations": {
             "production": {
