@@ -117,6 +117,10 @@ export class PatientListComponent implements OnInit {
     // console.log(this.model);
     if (this.onDelete) {
       // this.doDelete();
+      this.patientService.deletePatient(this.selected()).subscribe(
+        model => {    this.refreshList();
+          console.log(model);  }
+      );
     }
     if (this.onAdd) {
       // this.doAdd();

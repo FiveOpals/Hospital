@@ -18,7 +18,7 @@ export class PatientService {
 
   patientUrl = window.location.href + 'patient';
 
-  //patientUrl = './assets/patient.json';
+  // patientUrl = './assets/patient.json';
   constructor(private http: HttpClient) { }
   getPatientList(): Observable<Patient[]> {
     console.log(this.patientUrl);
@@ -62,9 +62,9 @@ export class PatientService {
       );
   }
 
-  deletePatient (patient: Patient): Observable<Patient> {
+  deletePatient (patient: Patient[]): Observable<Patient[]> {
 
-    return this.http.post<Patient>(this.patientUrl, patient, this.httpOptions)
+    return this.http.post<Patient[]>(this.patientUrl + '/' + 'deleteAll', patient, this.httpOptions)
       .pipe(
         retry(3),
         catchError(this.handleError)

@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9DOlxcVXNlcnNcXEpvZVxcRGVza3RvcFxcbWVoZGlcXGhvc3BpdGFsLWludGVyZmFjZS9zcmNcXHN0eWxlcy5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLCtFQUErRSIsImZpbGUiOiJzcmMvc3R5bGVzLnNhc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXG4iXX0= */", '', '']]
+module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9DOlxcVXNlcnNcXEpvZVxcRGVza3RvcFxcZWNsaXBzZVxcd29ya3NwYWNlc1xcaG9zcGl0YWxib290YW5ndWxhclxcaG9zcGl0YWwtaW50ZXJmYWNlL3NyY1xcc3R5bGVzLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsK0VBQStFIiwiZmlsZSI6InNyYy9zdHlsZXMuc2FzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cbiJdfQ== */", '', '']]
 
 /***/ }),
 
@@ -680,10 +680,10 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Joe\Desktop\mehdi\hospital-interface\src\styles.sass */"./src/styles.sass");
-__webpack_require__(/*! C:\Users\Joe\Desktop\mehdi\hospital-interface\src\css\bootstrap.css */"./src/css/bootstrap.css");
-__webpack_require__(/*! C:\Users\Joe\Desktop\mehdi\hospital-interface\src\css\bootstrap-grid.css */"./src/css/bootstrap-grid.css");
-module.exports = __webpack_require__(/*! C:\Users\Joe\Desktop\mehdi\hospital-interface\src\css\bootstrap-reboot.css */"./src/css/bootstrap-reboot.css");
+__webpack_require__(/*! C:\Users\Joe\Desktop\eclipse\workspaces\hospitalbootangular\hospital-interface\src\styles.sass */"./src/styles.sass");
+__webpack_require__(/*! C:\Users\Joe\Desktop\eclipse\workspaces\hospitalbootangular\hospital-interface\src\css\bootstrap.css */"./src/css/bootstrap.css");
+__webpack_require__(/*! C:\Users\Joe\Desktop\eclipse\workspaces\hospitalbootangular\hospital-interface\src\css\bootstrap-grid.css */"./src/css/bootstrap-grid.css");
+module.exports = __webpack_require__(/*! C:\Users\Joe\Desktop\eclipse\workspaces\hospitalbootangular\hospital-interface\src\css\bootstrap-reboot.css */"./src/css/bootstrap-reboot.css");
 
 
 /***/ })

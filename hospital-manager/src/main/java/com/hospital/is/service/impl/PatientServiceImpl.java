@@ -67,6 +67,16 @@ public class PatientServiceImpl implements PatientService {
 		}
 		return result;
 	}
+	
+	@Override
+	public void deleteAll(List<PatientDTO> listDTO){
+		List<Patient> listEntities=new ArrayList<>();
+		for (PatientDTO patientDTO : listDTO) {
+			listEntities.add(converter.toEntity(patientDTO));
+		}
+		patientRepository.deleteAll(listEntities);
+		
+	}
 
 	@Override
 	public PatientDTO update(Long id, PatientDTO dto) throws Exception {

@@ -46,5 +46,10 @@ public class PatientController {
 	public PatientDTO create(@RequestBody PatientDTO dto) {
 		return patientService.create(dto);
 	}
+	
+	@PostMapping("/deleteAll")
+	public void deleteList(@RequestBody List<PatientDTO> listDTO){
+		patientService.deleteAll(listDTO);
+	}
 
 }

@@ -19,6 +19,7 @@ public abstract class AbstractConverter<Entity, DTO> {
 
 		return entityMap;
 	}
+	
 
 	public Map<Long, DTO> toMapDTO(Map<Long, Entity> mapEntity) {
 		Map<Long, DTO> dtoMap = new HashMap<>();
